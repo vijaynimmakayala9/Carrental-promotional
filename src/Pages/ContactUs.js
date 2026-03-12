@@ -93,9 +93,9 @@ const ContactUs = () => {
                       <LocationMarkerIcon className="w-16 h-16 text-purple-600" />
                       <div>
                         <p className="text-base">
-                          VSD Cars<br />
-                                Plot No 358/ Teachers Colony/ BN Reddy Nagar/ Hayathnagar/ Rangareddy/ Telangana/ India
-<br />
+                          Varahi Self Drive Cars<br />
+                          Plot No 358/ Teachers Colony/ BN Reddy Nagar/ Hayathnagar/ Rangareddy/ Telangana/ India
+                          <br />
                         </p>
                       </div>
                     </div>

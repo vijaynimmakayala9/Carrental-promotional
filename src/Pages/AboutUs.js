@@ -16,13 +16,13 @@ const AboutUs = () => {
                   inView ? 'animate__animated animate__fadeInLeft' : ''
                 }`}
               >
-                <h2 className="text-3xl font-bold mb-4">About VSD Cars</h2>
+                <h2 className="text-3xl font-bold mb-4">About Varahi Self Drive Cars</h2>
                 <p className="text-lg leading-relaxed">
-                  At VSD Cars, we offer a seamless and hassle-free experience to rent vehicles for your travel needs. Whether you're planning a road trip, a business journey, or just need a car for a few days, we have a wide range of vehicles ready for you.
+                  At Varahi Self Drive Cars, we offer a seamless and hassle-free experience to rent vehicles for your travel needs. Whether you're planning a road trip, a business journey, or just need a car for a few days, we have a wide range of vehicles ready for you.
                   <br /><br />
                   Our fleet includes economy cars, luxury vehicles, and SUVs to suit all your preferences. With easy booking options, flexible rental periods, and transparent pricing, we ensure that you have a smooth and enjoyable rental experience.
                   <br /><br />
-                  Our platform provides real-time vehicle availability, 24/7 customer support, and secure transactions, ensuring peace of mind during your rental period. At VSD Cars, we prioritize customer satisfaction, making your trip stress-free and enjoyable.
+                  Our platform provides real-time vehicle availability, 24/7 customer support, and secure transactions, ensuring peace of mind during your rental period. At Varahi Self Drive Cars, we prioritize customer satisfaction, making your trip stress-free and enjoyable.
                 </p>
               </div>
             )}
@@ -39,7 +39,7 @@ const AboutUs = () => {
               >
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/012/939/271/original/animated-presentation-isolated-scene-strategy-meeting-business-plan-looped-flat-2d-characters-4k-footage-with-alpha-channel-colorful-illustration-for-mobile-website-animation-video.jpg"
-                  alt="VSD Cars"
+                  alt="Varahi Self Drive Cars"
                   className="w-full h-auto sm:h-[250px] md:h-[300px] lg:h-[350px] object-cover rounded-lg"
                 />
               </div>

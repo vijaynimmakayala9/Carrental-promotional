@@ -18,7 +18,7 @@ const Vision = () => {
             >
               <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
               <p className="text-lg leading-relaxed">
-                At VSD Cars, our vision is to redefine the way people experience car rentals, making it effortless, accessible, and enjoyable for everyone.
+                At Varahi Self Drive Cars, our vision is to redefine the way people experience car rentals, making it effortless, accessible, and enjoyable for everyone.
                 <br /><br />
                 We strive to provide a platform that offers a wide variety of vehicles to suit every traveler’s needs, from business trips to family vacations. Our goal is to empower customers with the freedom to choose, book, and drive at their convenience.
                 <br /><br />

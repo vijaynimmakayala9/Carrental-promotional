@@ -36,7 +36,7 @@ const OurMission = () => {
             >
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
               <p className="text-lg leading-relaxed">
-                At VSD Cars, our mission is to provide customers with an exceptional, reliable, and stress-free car rental experience.
+                At Varahi Self Drive Cars, our mission is to provide customers with an exceptional, reliable, and stress-free car rental experience.
                 <br /><br />
                 We aim to offer a diverse range of vehicles—from affordable economy cars to luxury SUVs—catered to the needs of every traveler. Our platform makes booking fast and easy, while our transparent pricing ensures that there are no hidden charges.
                 <br /><br />

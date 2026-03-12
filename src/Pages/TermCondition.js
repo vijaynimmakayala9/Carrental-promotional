@@ -11,7 +11,7 @@ const TermsAndConditions = () => {
         <div className="space-y-5 text-sm sm:text-base text-gray-800 leading-relaxed">
 
           <p>
-            These Terms and Conditions ("Terms") govern your use of the VSD Cars application ("App"). By accessing or using the App, you agree to comply with and be bound by these Terms.
+            These Terms and Conditions ("Terms") govern your use of the Varahi Self Drive Cars application ("App"). By accessing or using the App, you agree to comply with and be bound by these Terms.
           </p>
 
           <h2 className="font-semibold text-purple-700">1. Acceptance of Terms</h2>
@@ -50,7 +50,7 @@ const TermsAndConditions = () => {
 
           <h2 className="font-semibold text-purple-700">7. Limitation of Liability</h2>
           <p>
-            VSD Cars is not liable for any indirect, incidental, or consequential damages arising from your use of the App.
+            Varahi Self Drive Cars is not liable for any indirect, incidental, or consequential damages arising from your use of the App.
           </p>
 
           <h2 className="font-semibold text-purple-700">8. Updates to Terms</h2>

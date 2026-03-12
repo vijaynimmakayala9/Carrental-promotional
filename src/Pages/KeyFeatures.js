@@ -52,9 +52,9 @@ const KeyFeatures = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-blue-900 to-blue-300">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-white mb-6">Key Features of VSD Cars</h2>
+        <h2 className="text-3xl font-bold text-white mb-6">Key Features of Varahi Self Drive Cars</h2>
         <p className="text-lg text-blue-100 mb-12">
-          Explore the key features that make VSD Cars the best choice for your travel needs.
+          Explore the key features that make Varahi Self Drive Cars the best choice for your travel needs.
         </p>
 
         {/* Grid layout for the features */}

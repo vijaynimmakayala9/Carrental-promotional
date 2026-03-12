@@ -15,7 +15,7 @@ const ShippingPolicy = () => {
         {/* Content */}
         <div className="space-y-4 text-sm sm:text-base text-gray-800 leading-relaxed">
           <p>
-            At <strong>VSD Cars</strong>, we are committed to delivering your bookings smoothly and on time. This Shipping Policy outlines the terms related to vehicle delivery and pick-up services.
+            At <strong>Varahi Self Drive Cars</strong>, we are committed to delivering your bookings smoothly and on time. This Shipping Policy outlines the terms related to vehicle delivery and pick-up services.
           </p>
 
           <h2 className="font-semibold text-blue-700">1. Delivery Options</h2>

@@ -59,9 +59,9 @@ const WhyUs = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-blue-900 to-blue-300">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-white mb-6">Why Choose VSD Cars?</h2>
+        <h2 className="text-3xl font-bold text-white mb-6">Why Choose Varahi Self Drive Cars?</h2>
         <p className="text-lg text-blue-100 mb-12">
-          Here's why VSD Cars is the perfect choice for your next journey:
+          Here's why Varahi Self Drive Cars is the perfect choice for your next journey:
         </p>
 
         {/* Grid layout for the features */}
@@ -71,9 +71,8 @@ const WhyUs = () => {
               {({ inView, ref }) => (
                 <div
                   ref={ref}
-                  className={`bg-white rounded-lg p-6 flex flex-col items-center text-center shadow-lg transform transition-transform hover:-translate-y-2 border-b-4 border-transparent hover:border-purple-500 ${
-                    inView ? "animate__animated animate__fadeInUp" : ""
-                  }`}
+                  className={`bg-white rounded-lg p-6 flex flex-col items-center text-center shadow-lg transform transition-transform hover:-translate-y-2 border-b-4 border-transparent hover:border-purple-500 ${inView ? "animate__animated animate__fadeInUp" : ""
+                    }`}
                 >
                   {/* Circle around the icon */}
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4 shadow-md">

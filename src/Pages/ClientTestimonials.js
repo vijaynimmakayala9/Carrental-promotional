@@ -7,7 +7,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     position: "Owner, Royal Travels",
     feedback:
-      "VSD Cars helped us streamline our vehicle bookings. The flexibility in rental durations is a game-changer for us!",
+      "Varahi Self Drive Cars helped us streamline our vehicle bookings. The flexibility in rental durations is a game-changer for us!",
   },
   {
     name: "Neha Verma",

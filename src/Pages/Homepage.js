@@ -81,7 +81,7 @@ const HomePage = () => {
 
         <section
           id="home"
-          className="bg-gradient-to-r from-blue-900 to-blue-300 flex flex-col lg:flex-row justify-between items-center px-6 py-16 mt-24"
+          className="bg-gradient-to-r from-blue-900 to-blue-300 flex flex-col lg:flex-row justify-between items-center px-6 py-16 mt-20"
         >
 
           {/* LEFT SIDE TEXT */}
@@ -89,11 +89,11 @@ const HomePage = () => {
           <div className="text-white w-full max-w-lg mb-6 lg:mb-0">
 
             <h1 className="text-3xl font-bold mb-4 ml-4">
-              Welcome to <span className="text-yellow-300">VSD Cars</span>
+              Welcome to <span className="text-yellow-300">Varahi Self Drive Cars</span>
             </h1>
 
             <p className="text-lg mb-3 ml-4">
-              At VSD Cars, we offer a wide range of vehicles, from compact cars to
+              At Varahi Self Drive Cars, we offer a wide range of vehicles, from compact cars to
               luxurious SUVs, all at competitive rates.
             </p>
 
@@ -104,7 +104,7 @@ const HomePage = () => {
 
             <p className="text-lg ml-4">
               Book online easily and enjoy a smooth, safe, and reliable ride with
-              VSD Cars.
+              Varahi Self Drive Cars.
             </p>
 
             {/* APP DOWNLOAD BUTTONS */}
@@ -142,13 +142,14 @@ const HomePage = () => {
         </section>
 
         {/* OTHER SECTIONS */}
-        <PremiumCarSlider/>
+        {/* <PremiumCarSlider/> */}
 
         <div>
 
           <hr className="border-t-2 border-gray-300" />
 
           {[
+            { id: "premiumcars", component: <PremiumCarSlider /> },
             { id: "features", component: <KeyFeatures /> },
             { id: "whyus", component: <WhyUs /> },
             { id: "aboutus", component: <AboutUs /> },

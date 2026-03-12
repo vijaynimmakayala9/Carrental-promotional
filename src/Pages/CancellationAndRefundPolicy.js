@@ -18,7 +18,7 @@ const CancellationAndRefundPolicy = () => {
         {/* Content */}
         <div className="space-y-4 text-sm sm:text-base text-gray-800 leading-relaxed">
           <p>
-            At <strong>VSD Cars</strong>, we aim to provide a seamless car rental experience. This Cancellation & Refund Policy outlines the terms and conditions for cancelling bookings and requesting refunds.
+            At <strong>Varahi Self Drive Cars</strong>, we aim to provide a seamless car rental experience. This Cancellation & Refund Policy outlines the terms and conditions for cancelling bookings and requesting refunds.
           </p>
 
           <h2 className="font-semibold text-red-700">1. Cancellation Policy</h2>

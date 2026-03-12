@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
         {/* Content Section */}
         <div className="space-y-4 text-sm sm:text-base text-gray-800 leading-relaxed">
           <p>
-            At <strong>VSD Cars</strong>, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your data when you use our App.
+            At <strong>Varahi Self Drive Cars</strong>, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and protect your data when you use our App.
           </p>
 
           <h2 className="font-semibold text-blue-700">1. Collection of Personal Data</h2>
