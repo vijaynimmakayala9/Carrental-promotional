@@ -76,7 +76,7 @@ const ContactUs = () => {
                     <div className="flex items-center space-x-4 mb-4">
                       <PhoneIcon className="w-8 h-8 text-purple-600" />
                       <div>
-                        <p className="text-base">+91 96663 17749</p>
+                        <p className="text-base">+91 84668 88111</p>
                       </div>
                     </div>
 

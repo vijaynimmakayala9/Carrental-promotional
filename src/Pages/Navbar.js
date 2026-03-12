@@ -32,9 +32,9 @@ const Navbar = () => {
       <header className="bg-gradient-to-r from-blue-900 to-blue-300 py-2 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 h-20">
           {/* Logo - Replace text with image */}
-         <div className="flex items-center">
-  <img src={car} alt="Car Rental Logo" className="w-28 h-28 rounded-full object-cover" />
-</div>
+          <div className="flex items-center">
+            <img src={car} alt="Car Rental Logo" className="w-28 h-28 rounded-full object-cover" />
+          </div>
 
 
 
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className="flex items-center text-white">
             <a href="tel:+1234567890" className="flex items-center space-x-2">
               <FaPhoneAlt size={24} />
-              <span className="text-sm">+91 96663 17749</span>
+              <span className="text-sm">+91 84668 88111</span>
             </a>
           </div>
 

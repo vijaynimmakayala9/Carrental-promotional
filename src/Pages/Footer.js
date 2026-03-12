@@ -85,8 +85,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-6 mt-6 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-center sm:text-left mb-4 sm:mb-0">
-            © 2025 Varahi Car Rentals. All Rights Reserved.
+            © 2025 <a href="https://pixelmindsolutions.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline font-bold uppercase">Pixelmind Solutions Private Limited</a>. All Rights Reserved.
           </p>
+
           <div className="flex space-x-4 justify-center sm:justify-start">
             <FaFacebook size={20} className="text-white hover:text-blue-500" />
             <FaTwitter size={20} className="text-white hover:text-blue-400" />
