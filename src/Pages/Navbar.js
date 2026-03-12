@@ -72,6 +72,7 @@ const Navbar = () => {
           <div className="fixed right-0 top-0 w-3/5 bg-white h-full shadow-lg transform transition-transform duration-300 ease-in-out pt-6 pb-6 mt-20">
             <div className="flex flex-col items-center space-y-6 text-sm font-sans">
               <a href="/" onClick={() => closeMenuAndNavigate("#home")} className="text-blue-900 font-semibold hover:text-blue-700 transition duration-300">Home</a>
+              <a href="#premiumcars" onClick={() => closeMenuAndNavigate("#premiumcars")} className="text-blue-800 font-semibold hover:text-blue-600 transition duration-300">Premium Cars</a>
               <a href="#features" onClick={() => closeMenuAndNavigate("#features")} className="text-blue-800 font-semibold hover:text-blue-600 transition duration-300">Features</a>
               <a href="#aboutus" onClick={() => closeMenuAndNavigate("#aboutus")} className="text-blue-800 font-semibold hover:text-blue-600 transition duration-300">About Us</a>
               <a href="#whyus" onClick={() => closeMenuAndNavigate("#whyus")} className="text-blue-800 font-semibold hover:text-blue-600 transition duration-300">Why Us</a>
