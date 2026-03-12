@@ -4,6 +4,7 @@ import { FiStar, FiMapPin, FiX, FiChevronLeft, FiChevronRight, FiUsers, FiTag, F
 import { MdLocalGasStation, MdSettingsInputComponent } from "react-icons/md";
 import { createPortal } from "react-dom";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const API = "https://varahibackend.varahiselfdrivecars.com/api/car/get-cars";
 
@@ -16,6 +17,7 @@ const STATUS_CONFIG = {
 /* ─── Car Detail Modal (Portal — renders into document.body) ─── */
 const CarModal = ({ car, onClose }) => {
     const [imgIdx, setImgIdx] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         document.body.style.overflow = "hidden";
@@ -90,11 +92,11 @@ const CarModal = ({ car, onClose }) => {
                     <div className="grid grid-cols-2 gap-3 mb-4">
                         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-3 sm:p-4 text-center">
                             <p className="text-xs text-blue-500 font-medium uppercase tracking-wide mb-1">Per Hour</p>
-                            <p className="text-xl sm:text-2xl font-bold text-blue-700">₹{car.pricePerHour?.toLocaleString("en-IN")}</p>
+                            <p className="text-xl sm:text-2xl font-bold text-blue-700">₹{(car.pricePerHour - 100)?.toLocaleString("en-IN")}</p>
                         </div>
                         <div className="bg-green-50 border border-green-100 rounded-2xl p-3 sm:p-4 text-center">
                             <p className="text-xs text-green-500 font-medium uppercase tracking-wide mb-1">Per Day</p>
-                            <p className="text-xl sm:text-2xl font-bold text-green-700">₹{car.pricePerDay?.toLocaleString("en-IN")}</p>
+                            <p className="text-xl sm:text-2xl font-bold text-green-700">₹{(car.pricePerDay - 100)?.toLocaleString("en-IN")}</p>
                         </div>
                     </div>
 
@@ -113,7 +115,7 @@ const CarModal = ({ car, onClose }) => {
                         ))}
                     </div>
 
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-4" onClick={() => window.open("https://maps.app.goo.gl/3vit1EMymozTAgqc7", "_blank")}>
                         <span className="flex items-center gap-1.5 text-xs sm:text-sm bg-gray-100 px-3 py-1.5 rounded-full text-gray-600">
                             <FiMapPin size={13} className="text-red-400" /> KUKATPALLY
                         </span>
@@ -228,11 +230,11 @@ const PremiumMarqueeCard = ({ car, onClick }) => {
                 </div>
                 <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
                     <div>
-                        <span className="text-base font-bold text-blue-600">₹{car.pricePerDay?.toLocaleString("en-IN")}</span>
+                        <span className="text-base font-bold text-blue-600">₹{(car.pricePerDay - 100)?.toLocaleString("en-IN")}</span>
                         <span className="text-[10px] text-gray-400">/day</span>
                     </div>
                     <div className="text-right">
-                        <span className="text-xs font-semibold text-gray-600">₹{car.pricePerHour?.toLocaleString("en-IN")}</span>
+                        <span className="text-xs font-semibold text-gray-600">₹{(car.pricePerHour - 100)?.toLocaleString("en-IN")}</span>
                         <span className="text-[10px] text-gray-400">/hr</span>
                     </div>
                 </div>

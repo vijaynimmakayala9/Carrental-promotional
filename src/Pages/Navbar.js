@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   // Replace with your actual business coordinates or Google Maps link
-  const locationUrl = "https://maps.google.com/?q=VSD+Cars+Hyderabad";
+  const locationUrl = "https://maps.app.goo.gl/3vit1EMymozTAgqc7";
 
   return (
     <div>
