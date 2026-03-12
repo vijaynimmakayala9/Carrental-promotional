@@ -115,7 +115,7 @@ const CarModal = ({ car, onClose }) => {
 
                     <div className="flex flex-wrap gap-2 mb-4">
                         <span className="flex items-center gap-1.5 text-xs sm:text-sm bg-gray-100 px-3 py-1.5 rounded-full text-gray-600">
-                            <FiMapPin size={13} className="text-red-400" /> {car.location}
+                            <FiMapPin size={13} className="text-red-400" /> KUKATPALLY
                         </span>
                         <span className="flex items-center gap-1.5 text-xs sm:text-sm bg-gray-100 px-3 py-1.5 rounded-full text-gray-600">
                             <FiTag size={13} className="text-blue-400" /> {car.vehicleNumber}
@@ -224,7 +224,7 @@ const PremiumMarqueeCard = ({ car, onClick }) => {
                 <p className="text-[10px] text-gray-400 mt-0.5 truncate">{car.model} · {car.year}</p>
                 <div className="flex items-center gap-1 text-[10px] text-gray-400 mt-1.5">
                     <FiMapPin size={10} className="text-red-400 flex-shrink-0" />
-                    <span className="truncate">{car.location}</span>
+                    <span className="truncate">KUKATPALLY</span>
                 </div>
                 <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
                     <div>
