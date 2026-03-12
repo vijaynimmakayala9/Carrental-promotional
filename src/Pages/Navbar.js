@@ -46,9 +46,6 @@ const Navbar = () => {
               alt="VSD Cars Logo"
               className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-white/30 shadow-md"
             />
-            <span className="ml-2 text-white font-bold text-base sm:text-lg md:hidden lg:block hidden">
-              VSD Cars
-            </span>
           </div>
 
           {/* Desktop Nav Links */}

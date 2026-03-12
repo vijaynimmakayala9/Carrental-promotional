@@ -11,14 +11,18 @@ import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 import PremiumCarSlider from "./PremiumCarSlider";
+import car1 from "../images/Premium/111.jpg";
+import car2 from "../images/Premium/222.jpg";
+import car3 from "../images/Premium/333.jpg";
+import car4 from "../images/Premium/444.jpg";
 
 /* ---------------- IMAGE SLIDER ---------------- */
 
 const images = [
-  "/images/car1.jpg",
-  "/images/car2.jpg",
-  "/images/car3.jpg",
-  "/images/car4.jpg",
+  car1,
+  car2,
+  car3,
+  car4,
 ];
 
 const ImageSlider = () => {
