@@ -93,22 +93,19 @@ const HomePage = () => {
           <div className="text-white w-full max-w-lg mb-6 lg:mb-0">
 
             <h1 className="text-3xl font-bold mb-4 ml-4">
-              Welcome to <span className="text-yellow-300">Varahi Self Drive Cars</span>
+              Best <span className="text-yellow-300">Self Drive Cars</span> in Kukatpally Hyderabad
             </h1>
 
             <p className="text-lg mb-3 ml-4">
-              At Varahi Self Drive Cars, we offer a wide range of vehicles, from compact cars to
-              luxurious SUVs, all at competitive rates.
+              Varahi Self Drive Cars offers the <span className="text-yellow-300">best self drive cars in Kukatpally</span>, providing flexible and
+              affordable car rental solutions for individuals and families. If you are looking for <span className="text-yellow-300">self drive cars
+              for rent in Kukatpally Hyderabad</span>, we provide a wide range of well-maintained vehicles at
+              competitive prices.
             </p>
 
             <p className="text-lg mb-3 ml-4">
-              Whether you need a vehicle for a business trip, family vacation, or
-              long-term rental, we have you covered with flexible options.
-            </p>
-
-            <p className="text-lg ml-4">
-              Book online easily and enjoy a smooth, safe, and reliable ride with
-              Varahi Self Drive Cars.
+              Conveniently located near Kukatpally, we are a trusted choice for <span className="text-yellow-300">car rental in Kukatpally
+              Hyderabad</span> with easy booking and quick service.
             </p>
 
             {/* APP DOWNLOAD BUTTONS */}
