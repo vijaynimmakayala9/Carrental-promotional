@@ -16,6 +16,7 @@ import OwnerPrivacyPolicy from "./OwnerAppPolicies/OwnerPolicy";
 import OwnerTermsConditions from "./OwnerAppPolicies/OwnerTerms";
 import OwnerVehicleVerification from "./OwnerAppPolicies/OwnerVehicleVerification";
 import OwnerSupport from "./OwnerAppPolicies/OwnerSupport";
+import OwnerDeleteUrl from "./Delete-urls/OwnerDeleteUrl";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
         <Route path="/owner/terms-conditions" element={<OwnerTermsConditions />} />
         <Route path="/owner/vehicle-verification" element={<OwnerVehicleVerification />} />
         <Route path="/owner/support" element={<OwnerSupport />} />
+
+        {/* Owner Delete URL Route */}
+        <Route path="/owner/delete-url" element={<OwnerDeleteUrl />} />
       </Routes>
     </Router>
   );
