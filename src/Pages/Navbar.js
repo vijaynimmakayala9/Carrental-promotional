@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
-import car from '../images/carrentallogo.png';
+import car from '../images/logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
