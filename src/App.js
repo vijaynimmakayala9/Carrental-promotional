@@ -17,6 +17,11 @@ import OwnerTermsConditions from "./OwnerAppPolicies/OwnerTerms";
 import OwnerVehicleVerification from "./OwnerAppPolicies/OwnerVehicleVerification";
 import OwnerSupport from "./OwnerAppPolicies/OwnerSupport";
 import OwnerDeleteUrl from "./Delete-urls/OwnerDeleteUrl";
+import AboutPage from "./websitePages/AboutPage";
+import ServicesPage from "./websitePages/ServicesPage";
+import ContactPage from "./websitePages/ContactPage";
+import CarDetailsPage from "./websitePages/CarDetailsPage";
+import RentalPage from "./websitePages/RentalPage";
 
 function App() {
   return (
@@ -24,6 +29,14 @@ function App() {
       {/* Google Translate Widget at the Top */}
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/cars/:slug" element={<CarDetailsPage />} />
+        <Route path="/rentals/:slug" element={<RentalPage />} />
+
+
+
         <Route path="/demo" element={<DemoPage />} />
         <Route path="/price" element={<PricingCart />} />
         <Route path="/terms-and-conditions" element={<TermCondition />} />

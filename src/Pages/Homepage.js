@@ -71,74 +71,260 @@ const ImageSlider = () => {
 /* ---------------- HOME PAGE ---------------- */
 
 const HomePage = () => {
+
   const navigate = useNavigate();
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+
+      setCurrent((prev) => (prev + 1) % images.length);
+
+    }, 3500);
+
+    return () => clearInterval(interval);
+
+  }, []);
 
   return (
     <>
       <div>
+
         {/* Navbar */}
         <div className="fixed top-0 left-0 right-0 z-50">
           <Navbar />
         </div>
 
         {/* HERO SECTION */}
-
         <section
           id="home"
-          className="bg-gradient-to-r from-blue-900 to-blue-300 flex flex-col lg:flex-row justify-between items-center px-6 py-16 mt-20"
+          className="relative min-h-screen flex items-center overflow-hidden mt-20"
         >
 
-          {/* LEFT SIDE TEXT */}
+          {/* Background Slider Images */}
+          {images.map((img, index) => (
 
-          <div className="text-white w-full max-w-lg mb-6 lg:mb-0">
+            <div
+              key={index}
+              className={`
+                absolute inset-0 transition-opacity duration-1000
+                ${index === current ? "opacity-100" : "opacity-0"}
+              `}
+            >
 
-            <h1 className="text-3xl font-bold mb-4 ml-4">
-              Best <span className="text-yellow-300">Self Drive Cars</span> in Kukatpally Hyderabad
-            </h1>
-
-            <p className="text-lg mb-3 ml-4">
-              Varahi Self Drive Cars offers the <span className="text-yellow-300">best self drive cars in Kukatpally</span>, providing flexible and
-              affordable car rental solutions for individuals and families. If you are looking for <span className="text-yellow-300">self drive cars
-              for rent in Kukatpally Hyderabad</span>, we provide a wide range of well-maintained vehicles at
-              competitive prices.
-            </p>
-
-            <p className="text-lg mb-3 ml-4">
-              Conveniently located near Kukatpally, we are a trusted choice for <span className="text-yellow-300">car rental in Kukatpally
-              Hyderabad</span> with easy booking and quick service.
-            </p>
-
-            {/* APP DOWNLOAD BUTTONS */}
-
-            <div className="mt-6 flex justify-start ml-4 space-x-4">
-
-              <a
-                href="https://play.google.com/store/apps/details?id=com.self_drive_cars"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-6 py-3 rounded-full bg-gradient-to-r from-green-500 to-green-700 text-white text-sm font-semibold shadow-lg hover:scale-105 transform transition duration-300"
-              >
-                <FaGooglePlay size={24} />
-                <span>Available on Play Store</span>
-              </a>
-
-              <a
-                href="https://apps.apple.com/in/app/varahi-self-drive-cars/id6753347255"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-6 py-3 rounded-full bg-gradient-to-r from-gray-700 to-gray-900 text-white text-sm font-semibold shadow-lg hover:scale-105 transform transition duration-300"
-              >
-                <FaApple size={24} />
-                <span>Available on App Store</span>
-              </a>
+              <img
+                src={img}
+                alt="Premium Cars"
+                className="w-full h-full object-cover"
+              />
 
             </div>
 
+          ))}
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-blue-950/75 to-black/60"></div>
+
+          {/* Blue Glow */}
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 blur-3xl rounded-full"></div>
+
+          {/* Content */}
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-10 py-16 sm:py-20 min-h-screen flex items-center justify-center">
+
+            <div className="max-w-4xl mx-auto text-white text-center">
+
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-4 sm:px-5 py-2 mb-6">
+
+                <div className="w-2 h-2 rounded-full bg-yellow-300"></div>
+
+                <span className="text-[10px] sm:text-xs tracking-[0.22em] uppercase font-semibold text-yellow-200">
+                  Premium Self Drive Cars
+                </span>
+
+              </div>
+
+              {/* Heading */}
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.08] mb-6">
+
+                Best Self Drive Cars in
+
+                <span className="block text-yellow-300 mt-2">
+                  Kukatpally, Hyderabad
+                </span>
+
+              </h1>
+
+              {/* Paragraph 1 */}
+              <p className="text-sm sm:text-lg lg:text-xl text-white/85 leading-relaxed mb-5 max-w-3xl mx-auto">
+
+                Welcome to
+                <span className="text-yellow-300 font-semibold">
+                  {" "}Varahi Self Drive Cars
+                </span>,
+                your premium and affordable choice for car rental in Kukatpally Hyderabad.
+
+                Whether you need a sleek hatchback for city driving, a spacious SUV for family trips,
+                or a rugged luxury car, we provide the best self drive car rental Kukatpally has to offer.
+
+              </p>
+
+              {/* Paragraph 2 */}
+              <p className="text-sm sm:text-lg text-white/75 leading-relaxed mb-6 max-w-2xl mx-auto">
+
+                Enjoy 100% privacy, zero driver hassle, and well-maintained vehicles with flexible
+                daily and monthly rental plans.
+
+              </p>
+
+              {/* H2 */}
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-300 mb-4">
+
+                Our Flexible Self Drive Car Rental Plans
+
+              </h2>
+
+              {/* Paragraph 3 */}
+              <p className="text-sm sm:text-lg text-white/80 leading-relaxed mb-10 max-w-3xl mx-auto">
+
+                We offer short-term daily rentals and affordable monthly car rental plans in Kukatpally.
+                Conveniently located near Kukatpally Metro Station, we ensure quick pickup and drop
+                services with the best self drive cars for rent in Hyderabad.
+
+              </p>
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                {/* Play Store */}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.self_drive_cars"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+          w-full sm:w-auto
+          flex items-center justify-center gap-3
+          px-6 sm:px-7 py-4
+          rounded-2xl
+          bg-gradient-to-r from-green-500 to-green-700
+          text-white
+          font-semibold
+          shadow-xl
+          hover:scale-105
+          transition-all duration-300
+        "
+                >
+
+                  <FaGooglePlay size={24} />
+
+                  <div className="text-left">
+
+                    <p className="text-xs text-white/70">
+                      GET IT ON
+                    </p>
+
+                    <p className="text-sm font-bold">
+                      Google Play
+                    </p>
+
+                  </div>
+
+                </a>
+
+                {/* App Store */}
+                <a
+                  href="https://apps.apple.com/in/app/varahi-self-drive-cars/id6753347255"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+          w-full sm:w-auto
+          flex items-center justify-center gap-3
+          px-6 sm:px-7 py-4
+          rounded-2xl
+          bg-gradient-to-r from-slate-700 to-black
+          text-white
+          font-semibold
+          shadow-xl
+          hover:scale-105
+          transition-all duration-300
+        "
+                >
+
+                  <FaApple size={24} />
+
+                  <div className="text-left">
+
+                    <p className="text-xs text-white/70">
+                      DOWNLOAD ON THE
+                    </p>
+
+                    <p className="text-sm font-bold">
+                      App Store
+                    </p>
+
+                  </div>
+
+                </a>
+
+              </div>
+
+              {/* Fleet Tags */}
+              <div className="flex flex-wrap justify-center gap-3 mt-10">
+
+                {[
+                  "Mahindra",
+                  "Suzuki",
+                  "Alto",
+                  "WagonR",
+                  "Baleno",
+                  "Innova",
+                  "Fortuner",
+                ].map((item, i) => (
+
+                  <div
+                    key={i}
+                    className="
+            px-4 py-2
+            rounded-full
+            bg-white/10
+            border border-white/10
+            backdrop-blur-sm
+            text-xs sm:text-sm
+            font-medium
+            text-white/90
+          "
+                  >
+                    {item}
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
           </div>
 
-          {/* RIGHT SIDE IMAGE SLIDER */}
+          {/* Dots */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
 
-          <ImageSlider />
+            {images.map((_, i) => (
+
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`
+                  transition-all duration-300 rounded-full
+                  ${i === current
+                    ? "w-10 h-3 bg-yellow-300"
+                    : "w-3 h-3 bg-white/50"}
+                `}
+              />
+
+            ))}
+
+          </div>
 
         </section>
 
